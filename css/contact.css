@@ -9,7 +9,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 300px 150px 830px 540px 200px;
+    grid-template-rows: 90px 300px 150px 830px 540px auto;
     grid-template-areas:
     "header header"
     "picture picture"
@@ -21,7 +21,7 @@
 }
 
 header {
-    border: 1px solid #424242;
+    /* border: 1px solid #424242; */
     grid-area: header;
 }
 
@@ -44,7 +44,7 @@ header {
 }
 
 .link-about a {
-    color: black;
+    color: #7C8E74;
 }
 
 main {
@@ -63,6 +63,7 @@ main {
 .contact-info p {
     text-align: center;
     margin-bottom: 20px;
+    color: #424242;
 }
 
 hr {
@@ -125,6 +126,5 @@ textarea {
 }
 
 footer {
-    border: 1px solid #424242;
     grid-area: footer;
 }
