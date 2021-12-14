@@ -38,6 +38,7 @@ header {
     z-index: 1;
 }
 
+
 .cover {
     object-fit: cover;
     height: 450px;
