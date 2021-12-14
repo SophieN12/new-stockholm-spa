@@ -1,5 +1,19 @@
 @import 'general.css';
 
+button {
+    margin: 2rem 0;
+
+    padding: 20px 50px;
+    border: none;
+    color: var(--sand);
+    background-color: var(--green);
+
+    font-family: var(--ff-bodytext);
+    font-size: var(--fs-bodytext);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
 #top-container {
     width: 100%;
     text-align: center;
@@ -10,6 +24,7 @@
 
     height: 400px;
 
+    text-transform: uppercase;
     font-family: var(--ff-rubrik);
     font-size: var(--fs-rubrik);
     color: var(--sand);
@@ -20,14 +35,7 @@
 #top-container button {
     margin: 3rem 0;
 
-    padding: 20px;
-    border: none;
-    color: var(--sand);
-    background-color: var(--green);
-
-    font-family: var(--ff-rubrik);
     font-size: var(--fs-underrubrik);
-    text-transform: uppercase;
 }
 
 #flex-container {
@@ -50,27 +58,19 @@
     height: 600px;
     text-align: center;
 
-    font-family: var(--ff-rubrik);
-    font-size: var(--fs-underrubrik);
+    padding: 100px 50px 0px 50px;
+}
 
-    padding-top: 100px;
+.box h2 {
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-rubrik);
+    
+    margin-bottom: 20px;
 }
 
 .box p {
-    font-family: var(--ff-bodytext);
-}
-
-.box button {
-    margin: 2rem 0;
-
-    padding: 20px;
-    border: none;
-    color: var(--sand);
-    background-color: var(--green);
-
-    font-family: var(--ff-rubrik);
     font-size: var(--fs-bodytext);
-    text-transform: uppercase;
+    font-family: var(--ff-bodytext);
 }
 
 .box-img {
@@ -78,5 +78,63 @@
 }
 
 .box-wide {
+    background-color: var(--white);
     padding: 100px;
+
+    width: 60vw;
+}
+
+.box-wide h2 {
+    font-size: var(--fs-rubrik);
+    margin-bottom: 20px;
+}
+
+.box-wide p {
+    font-size: var(--fs-bodytext);
+}
+
+#product-preview {
+    background-color: var(--sand);
+
+    padding: 100px;
+
+    text-align: center;
+}
+
+#product-preview h2 {
+    font-size: var(--fs-rubrik);
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.product-flex {
+    width: 100%;
+    max-width: 1800px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 50px auto;
+}
+
+.product-item {
+    flex: 0;
+    flex-basis: calc(33.33%); 
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.img-container {   
+    width: 100%;
+
+    background: url('/img/img-home/roberto-nickson-YCW4BEhKluw-unsplash.jpg');
+    background-size: cover;
+    background-position-y: -400px;
+
+    height: 400px;
 }
