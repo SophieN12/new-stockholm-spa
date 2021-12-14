@@ -3,9 +3,9 @@
 }
 
 .container-1 {
-    max-width: 1800px;
+    max-width: 1920px;
     margin: 0 auto;
-    background-color: #EEEAE7;
+    background-color: var(--sand);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,20 +51,33 @@ header {
 
 .link-about a,
 .link-about h2 {
-    color: #424242;
+    color: var(--black);
     margin: 70px auto;
+    font-size: var(--fs-underrubrik);
+}
+
+/* Lägger till detta då styling för länkar krockade med header.css */
+.link-about a {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 3px;
 }
 
 main {
-    background-color: #ffffff;
-    border-right: 2px solid #EEEAE7;
+    background-color: var(--white);
+    border-right: 2px solid var(--sand);
     grid-area: contact;
 }
 
 main h2,
 aside h2,
 form p {
-    color: #424242;
+    color: var(--black);
+}
+
+main h2,
+aside h2 {
+    font-size: var(--fs-underrubrik);
 }
 
 .contact-info {
@@ -77,7 +90,7 @@ form p {
 .contact-info p {
     text-align: center;
     margin-bottom: 20px;
-    color: #424242;
+    color: var(--black);
 }
 
 hr {
@@ -99,8 +112,8 @@ hr {
 }
 
 aside {
-    background-color: #ffffff;
-    border-left: 2px solid #EEEAE7;
+    background-color: var(--white);
+    border-left: 2px solid var(--sand);
     grid-area: form;
 }
 
@@ -120,12 +133,12 @@ input {
     margin-top: 5px;
     margin-bottom: 40px;
     border-radius: 5px;
-    border: 1px solid #424242;
+    border: 1px solid var(--black);
 }
 
 input[type="submit"] {
-    background-color: #7C8E74;
-    color: #ffffff;
+    background-color: var(--green);
+    color: var(--white);
     padding: 8px;
     width: 170px;
     margin: 0 auto;
@@ -150,7 +163,7 @@ textarea {
 }
 
 .about {
-    background-color: #ffffff;
+    background-color: var(--white);
     margin-top: 70px;
     grid-area: about;
     text-align: center;
