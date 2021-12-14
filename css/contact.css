@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-.container {
+.container-1 {
     width: 100%;
     background-color: #EEEAE7;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 450px auto auto 540px auto;
+    grid-template-rows: 90px 450px auto auto 540px 378px;
     grid-template-areas:
     "header header"
     "picture picture"
@@ -147,6 +147,6 @@ textarea {
     grid-area: about;
 }
 
-footer {
+.container {
     grid-area: footer;
 }
