@@ -1,13 +1,7 @@
 h1,
-h2,
 h3, 
 button{
    font-family: var(--ff-rubrik);
-}
-
-h4,
-p{
-    font-family: var(--ff-bodytext);
 }
 
 h1{
@@ -22,11 +16,6 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-h2{
-    font-size: var(--fs-rubrik);
-    color: var(--green);
-}       
-
 h3{
     font-size: var(--fs-underrubrik);
     color: var(--black);
@@ -34,10 +23,8 @@ h3{
 
 h4{
     font-size:var(--fs-bodytext);
-}
-
-p{
-    font-size: 18px;
+    font-family: var(--ff-bodytext);
+    color: var(--black);
 }
 
 
