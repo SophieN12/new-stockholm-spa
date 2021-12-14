@@ -3,12 +3,13 @@
 }
 
 .container-1 {
-    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
     background-color: #EEEAE7;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 450px auto auto 540px 378px;
+    grid-template-rows: 110px 450px auto auto 640px 378px;
     grid-template-areas:
     "header header"
     "picture picture"
@@ -21,14 +22,20 @@
 
 header {
     grid-area: header;
+    width: 100%;
+    z-index: 2;
 }
 
-
+#kontakt {
+    padding-bottom: 3px;
+    border-bottom: solid 2px var(--black);
+}
 
 .picture {
     position: relative;
     grid-area: picture;
     text-align: center;
+    z-index: 1;
 }
 
 .cover {
