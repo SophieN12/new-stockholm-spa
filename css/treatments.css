@@ -10,6 +10,7 @@
     overflow: hidden;
 }
 
+
 /* headerbild med text */
 .head{
     grid-column: 1/4;
@@ -28,6 +29,7 @@ h1{
     margin: auto auto;
     width: 800px;
 }
+
 
 /* navigation ikoner + olika behandlingar */
 .navigation_icons{
@@ -62,7 +64,6 @@ a{
 .box{
     width: 100%;
 }
-
 
 
 /* upptäck sektion */
@@ -111,4 +112,40 @@ p{
     font-family: var(--ff-rubrik);
     font-size: var(--fs-underrubrik);
     text-align: center;
+}
+
+
+/* skärmar mindre än 780px (tablets) */
+@media screen and (max-width: 1030px){
+    .single-icon{
+        width: 80px;
+        margin: 0 20px;
+    }
+    .box{
+        width: 200px;
+    }
+    .treatment-wrapper{
+        gap: 40px 20px;
+    }
+    h1{
+        font-size: var(--fs-rubrik);
+        width: 450px;
+        top: 200px;
+    }
+    .discover{
+        margin: 50px 0 100px 0;
+    }
+    #produktbild{
+        width: 35%;
+        height: 330px;
+    }
+    .discover-textarea{
+        padding: 0;
+    }
+    h2{
+        font-size: var(--fs-underrubrik);
+    }
+    .button-discover{
+        position: static;
+    }
 }
