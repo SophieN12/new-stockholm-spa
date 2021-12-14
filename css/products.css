@@ -1,0 +1,93 @@
+h1,
+h2,
+h3, 
+button{
+   font-family: var(--ff-rubrik);
+}
+
+h4,
+p{
+    font-family: var(--ff-bodytext);
+}
+
+h1{
+    color: var(--white);
+    font-size: var(--fs-stor);
+    font-weight: normal;
+    width: 800px;
+
+    position: absolute;
+    top: 25%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    font-size: var(--fs-rubrik);
+    color: var(--green);
+}       
+
+h3{
+    font-size: var(--fs-underrubrik);
+    color: var(--black);
+}
+
+h4{
+    font-size:var(--fs-bodytext);
+}
+
+p{
+    font-size: 18px;
+}
+
+
+button{
+    background-color: var(--green);
+    color: var(--white);
+    font-size: var(--fs-bodytext);
+    padding: 20px 50px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#start-section{
+    z-index: -1;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#start-section img{
+    width: 100%;
+}
+
+
+#shop-now-btn{
+    position: absolute;
+    top: 85% ;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.section-header{
+    text-align: center;
+    margin: 50px;
+}
+
+
+.collections-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 130px;
+    justify-items: center;
+    padding: 10px 40px;
+}
+
+.collections-images h3{
+    margin-top: 30px;
+}
+
+.img{
+    width: 93%;
+}
+
