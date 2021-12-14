@@ -74,7 +74,37 @@ button{
     margin-top: 30px;
 }
 
-.img{
+.product-img{
     width: 93%;
+}
+
+#call-to-action-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: #EEEAE7;;
+}
+
+#call-to-action-section img{
+    width: 35%;
+    margin: 1.5% 3%;
+}
+
+#call-to-action-section h2{
+    margin: 7% 0 5% 5%;
+}
+
+#call-to-action-section p{
+    margin: 0 5.1%;
+    max-width: 60%;
+    color: #424242;
+    line-height: 1.5em;
+}
+
+#call-to-action-section button{
+    position: absolute;
+    top: 83%;
+    left: 87%;
+    transform: translate(-50%, -50%);
 }
 
