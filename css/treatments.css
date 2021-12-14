@@ -186,5 +186,8 @@ h2{
     .button-discover{
         padding-left: 40px;
     }
-   
+    .produktinfo{
+        font-size: var(--fs-bodytext-mobile);
+        line-height: 25px;
+    }
 }
