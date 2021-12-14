@@ -1,0 +1,30 @@
+@import "general.css";
+
+.content{
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    row-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    overflow: hidden;
+}
+
+/* headerbild med text */
+.head{
+    grid-column: 1/4;
+}
+#head-img{
+    width: 100%;
+}
+h1{
+    font-family: tenor sans;
+    color: var(--white);
+    font-size: var(--fs-stor);
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 250px;
+    margin: auto auto;
+    width: 800px;
+}
