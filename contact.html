@@ -7,6 +7,60 @@
     <title>CONTACT US</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header >Header</header>
+
+        <div class="picture">
+            <!-- Ska byta bild då denna ej var högupplöst -->
+            <img src="img-contact/spa.png" alt="Bild på inomhuspool" class="cover" width="1200" height="340">
+        </div>
+
+        <div class="link-about">
+            <h2>Vill du veta mer <a href="#om_oss">om oss?</a></h2>
+        </div>
+
+        <main>
+            <h2>Kontakta oss</h2>
+            <div class="contact-info">
+                <p>Telefonnummer<br> 08-7878724</p>
+                <p>E-post<br>Stockholm_SPA@gmail.com</p>
+                <hr>
+                <h2>Öppettider</h2>
+                <p>Måndag-Fredag<br>09-22</p>
+                <p>Lördag<br>10-22</p>
+                <p>Söndag<br>11-23</p>
+                <hr>
+            </div>
+        </main>
+
+        <aside>
+            <h2>Vill du att vi kontaktar dig?</h2>           
+            <form action="" method="post" id="form">
+                <label for="name">Namn*</label>
+                <input type="text"name="name" id="name"required>
+
+                <label for="nr">Telefonnummer*</label>
+                <input type="numbers" name="nr" id="nr">
+
+                <label for="email">E-post*</label>
+                <input type="email" name="email" id="email"required>
+
+                <label for="message">Meddelande</label><br>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Beskriv din förfrågan här"></textarea>
+
+                <div class="container-btn">
+                    <input type="submit" value="SKICKA">
+                </div>
+            </form>
+        </aside>
+
+        <div class="about">
+            <a id="om_oss">
+                <h2>Om oss</h2>
+            </a>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
 </body>
 </html>
