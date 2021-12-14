@@ -62,3 +62,53 @@ a{
 .box{
     width: 100%;
 }
+
+
+
+/* upptäck sektion */
+.discover{
+    grid-column: 1/4;
+    background-color: var(--sand);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 100px 0;
+}
+#produktbild{
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.discover-textarea{
+    max-width: 600px;
+    position: relative;
+    padding-top: 30px;
+}
+h2{
+    font-family: var(--ff-rubrik);
+    color: var(--green);
+    font-size: var(--fs-rubrik);
+    margin-bottom: 20px;
+}
+p{
+    font-family: var(--ff-bodytext);
+    color: var(--black);
+    font-size: var(--fs-bodytext);
+    line-height: 29px;
+}
+.button-discover{
+    width: 250px;
+    height: 60px;
+    margin-top: 40px;
+    padding: 12px 20px 10px 30px;
+    background-color:var(--green);
+    border-radius: 5px;
+}
+#button-text{
+    text-decoration: none;
+    color: var(--sand);
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-underrubrik);
+    text-align: center;
+}
