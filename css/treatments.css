@@ -92,7 +92,7 @@ h2{
     font-size: var(--fs-rubrik);
     margin-bottom: 20px;
 }
-p{
+.produktinfo{
     font-family: var(--ff-bodytext);
     color: var(--black);
     font-size: var(--fs-bodytext);
