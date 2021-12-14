@@ -45,7 +45,7 @@ h1{
 .single-icon:hover{
     opacity: 100%;
 }
-section{
+.section-treatment{
     grid-column: 1/4;
     display: flex;
     justify-content: center;
