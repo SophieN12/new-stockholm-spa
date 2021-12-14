@@ -9,7 +9,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 110px 450px auto auto 640px 378px;
+    grid-template-rows: auto auto auto auto auto 378px;
     grid-template-areas:
     "header header"
     "picture picture"
@@ -32,16 +32,14 @@ header {
 }
 
 .picture {
-    position: relative;
     grid-area: picture;
     text-align: center;
     z-index: 1;
 }
 
-
 .cover {
     object-fit: cover;
-    height: 450px;
+    height: 350px;
     width: 100%;
 }
 
@@ -59,7 +57,7 @@ header {
 /* Lägger till detta då styling för länkar krockade med header.css */
 .link-about a {
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 2px solid var(--black);
     padding-bottom: 3px;
 }
 
@@ -104,7 +102,7 @@ hr {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 70px 0;
 }
 
@@ -181,6 +179,11 @@ textarea {
     margin: 0 auto;
 }
 
+.about img {
+    height: 250px;
+    margin: 70px 30px;
+}
+
 .container {
     grid-area: footer;
 }
@@ -192,20 +195,29 @@ textarea {
         background-color: var(--sand);
     
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 110px 450px auto auto auto 640px 378px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas:
-        "header header"
-        "picture picture"
-        "link link"
-        "contact contact"
-        "form form"
-        "about about"
-        "footer footer"
+        "header"
+        "picture"
+        "link"
+        "contact"
+        "form"
+        "about"
+        "footer"
         ;
     }
 
     main {
         margin-bottom: 70px;
     }
+
+    .cover {
+        height: 200px;
+    }
+
 }
+    @media screen and (max-width: 767px) {
+        
+    }
+    
