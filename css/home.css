@@ -1,4 +1,6 @@
-header {
+@import 'general.css';
+
+#top-container {
     width: 100%;
     text-align: center;
 
@@ -6,19 +8,25 @@ header {
     background-size: cover;
     background-position-y: -80px;
 
-    height: 500px;
+    height: 400px;
+
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-rubrik);
+    color: var(--sand);
+
+    padding-top: 100px;
 }
 
-header button {
+#top-container button {
     margin: 3rem 0;
 
     padding: 20px;
     border: none;
-    color: #eeeae7;
-    background-color: #7c8e74;
+    color: var(--sand);
+    background-color: var(--green);
 
-    font-family: 'tenor sans';
-    font-size: 24px;
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-underrubrik);
     text-transform: uppercase;
 }
 
@@ -35,14 +43,34 @@ header button {
 }
 
 .box {
-    background-color: #eeeae7;
+    background-color: var(--sand);
     flex: 0;
     flex-basis: calc(33.33%);
     
     height: 600px;
     text-align: center;
 
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-underrubrik);
+
     padding-top: 100px;
+}
+
+.box p {
+    font-family: var(--ff-bodytext);
+}
+
+.box button {
+    margin: 2rem 0;
+
+    padding: 20px;
+    border: none;
+    color: var(--sand);
+    background-color: var(--green);
+
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-bodytext);
+    text-transform: uppercase;
 }
 
 .box-img {
