@@ -12,6 +12,8 @@ button {
     font-size: var(--fs-bodytext);
     text-transform: uppercase;
     font-style: italic;
+
+    border-radius: 5px;
 }
 
 #top-container {
@@ -131,7 +133,7 @@ button {
     }
 
     p {
-        font-size: 18px;
+        font-size: var(--fs-bodytext-mobile);
     }
 }
 
@@ -170,7 +172,7 @@ button {
 
         background-position-y: 0;
 
-        font-size: 30px;
+        font-size: var(--fs-underrubrik);
 
         padding-top: 100px;
     }
@@ -194,7 +196,7 @@ button {
     }
 
     #product-preview {
-        padding: 0;
+        padding: 0 0 50px 0;
         margin: auto;
     }
 
