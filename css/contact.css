@@ -20,7 +20,6 @@
 }
 
 header {
-    /* border: 1px solid #424242; */
     grid-area: header;
 }
 
@@ -40,12 +39,12 @@ header {
 
 .link-about {
     grid-area: link;
-    margin: auto;
 }
 
 .link-about a,
 .link-about h2 {
     color: #424242;
+    margin: 70px auto;
 }
 
 main {
@@ -134,6 +133,7 @@ textarea {
     margin-bottom: 30px;
     padding: 5px;
     font-family: 'Lora';
+    border-radius: 5px;
 }
 
 .container-btn {
@@ -143,8 +143,14 @@ textarea {
 
 .about {
     background-color: #ffffff;
-    margin-top: 50px;
+    margin-top: 70px;
     grid-area: about;
+    text-align: center;
+}
+
+.about p {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .container {
