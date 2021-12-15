@@ -18,20 +18,20 @@ button {
 
 #top-container {
     width: 100%;
-    text-align: center;
+    max-width: 1920px;
+    height: 400px;
+    padding-top: 100px;
+    margin: 0 auto;
 
     background: url('/img/img-home/photo-1523459178261-028135da2714.jpeg');
     background-size: cover;
     background-position-y: -80px;
 
-    height: 400px;
-
+    text-align: center;
     text-transform: uppercase;
     font-family: var(--ff-rubrik);
     font-size: var(--fs-rubrik);
     color: var(--sand);
-
-    padding-top: 100px;
 }
 
 #top-container button {
@@ -43,6 +43,7 @@ button {
 #flex-container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -54,7 +55,6 @@ button {
 
 .box {
     background-color: var(--sand);
-    flex: 0;
     flex-basis: calc(33.33%);
     
     height: 600px;
@@ -75,7 +75,8 @@ button {
     background-color: var(--white);
     padding: 100px;
 
-    width: 60vw;
+    width: 55vw;
+    max-width: 1200px;
 }
 
 .box-wide h2 {
@@ -85,6 +86,8 @@ button {
 #product-preview {
     background-color: var(--sand);
 
+    max-width: 1920px;
+    margin: 0 auto;
     padding: 100px;
 
     text-align: center;
@@ -98,16 +101,15 @@ button {
 
 .product-flex {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1200px;
 
     display: flex;
     flex-wrap: wrap;
 
-    margin: 50px auto;
+    margin: 50px auto 20px;
 }
 
 .product-item {
-    flex: 0;
     flex-basis: calc(33.33%); 
     text-align: center;
 }
@@ -119,12 +121,13 @@ button {
 
 .img-container {   
     width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    margin: 0 auto;
 
     background: url('/img/img-home/roberto-nickson-YCW4BEhKluw-unsplash.jpg');
     background-size: cover;
     background-position-y: -20vw;
-
-    height: 400px;
 }
 
 @media screen and (max-width:1200px) {
@@ -152,7 +155,8 @@ button {
     }
 
     .product-flex {
-        display: block;
+        flex: 0 0 100%;
+        justify-content: center;
     }
 
     .product-item img {
@@ -161,7 +165,7 @@ button {
     }
 
     .product-item {
-        margin: 50px ;
+        margin: 50px;
     }
 }
 
@@ -177,14 +181,14 @@ button {
         padding-top: 100px;
     }
 
-    #flex-container {
-        display: block;
-    }
+    #flex-container :nth-child(3) { order: 3; }
+    #flex-container :nth-child(4)  {order: 4; }
 
     .box {
-        height: auto;
-
+        flex: 0 0 100%;
         padding: 100px 50px 50px 50px;
+
+        height: auto;
     }
 
     .box-img {
@@ -202,5 +206,9 @@ button {
 
     #product-preview h2 {
        padding: 100px 100px 0 100px;
+    }
+
+    .product-item {
+        margin: 25px;
     }
 }
