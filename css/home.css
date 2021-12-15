@@ -27,7 +27,7 @@ button {
     padding-top: 100px;
     margin: 0 auto;
 
-    background: url('/img/img-home/photo-1523459178261-028135da2714.jpeg');
+    background: url('../img/img-home/photo-1523459178261-028135da2714.jpeg');
     background-size: cover;
     background-position-y: -80px;
 
@@ -129,7 +129,7 @@ button {
     height: 400px;
     margin: 0 auto;
 
-    background: url('/img/img-home/roberto-nickson-YCW4BEhKluw-unsplash.jpg');
+    background: url('../img/img-home/roberto-nickson-YCW4BEhKluw-unsplash.jpg');
     background-size: cover;
     background-position-y: -20vw;
 }
