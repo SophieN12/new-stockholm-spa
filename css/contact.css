@@ -149,7 +149,7 @@ input[type="submit"] {
     margin: 0 auto;
     margin: 70px;
     font-size: 27px;
-    font-family: 'Tenor sans';
+    font-family: var(--ff-rubrik);
     border: none;
 }
 
@@ -162,7 +162,7 @@ textarea {
     height: 147px;
     margin-top: 5px;
     padding: 5px;
-    font-family: 'Lora';
+    font-family: var(--ff-bodytext);
     border-radius: 5px;
 }
 
@@ -179,6 +179,11 @@ textarea {
     margin: 0 auto;
 }
 
+.flex-img {
+    display: flex;
+    justify-content: center;
+}
+
 .about img {
     height: 250px;
     margin: 70px 30px;
@@ -190,11 +195,6 @@ textarea {
 
 @media screen and (max-width: 960px) {
     .container-1 {
-        max-width: 1920px;
-        margin: 0 auto;
-        background-color: var(--sand);
-    
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas:
@@ -208,16 +208,47 @@ textarea {
         ;
     }
 
-    main {
-        margin-bottom: 70px;
-    }
-
     .cover {
         height: 200px;
     }
 
+    main {
+        margin-bottom: 70px;
+    }
+
+
+
+    .flex-img {
+        flex-direction: column;
+    }
+
+    .about img {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .about {
+        padding-bottom: 70px;
+    }
+
 }
     @media screen and (max-width: 767px) {
-        
+        .cover {
+            height: 120px;
+        }
+
+        .link-about a,
+        .link-about h2,
+        main h2,
+        aside h2,
+        .about h2 {
+        font-size: 24px;
+        }
+
+        main p,
+        aside p,
+        .about p {
+            font-size: 18px;
+        }
     }
     
