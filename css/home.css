@@ -132,7 +132,7 @@ button {
 
 @media screen and (max-width:1200px) {
     .product-item img {
-        max-width: 25vw;
+        max-width: 20vw;
     }
 
     p {
@@ -160,7 +160,7 @@ button {
     }
 
     .product-item img {
-        max-width: 60vw;
+        max-width: 50vw;
         margin-bottom: 20px;
     }
 
@@ -193,6 +193,7 @@ button {
 
     .box-img {
         padding: 0;
+        margin-bottom: -5px;
     }
 
     .img-container {   
