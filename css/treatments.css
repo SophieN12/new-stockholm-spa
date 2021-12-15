@@ -1,0 +1,188 @@
+@import "general.css";
+
+.content{
+    max-width: 1920px;
+    margin: 0 auto;
+    display: grid;
+    row-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    overflow: hidden;
+}
+
+
+/* headerbild med text */
+.head{
+    grid-column: 1/4;
+}
+#head-img{
+    width: 100%;
+}
+h1{
+    font-family: tenor sans;
+    color: var(--white);
+    font-size: var(--fs-stor);
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 250px;
+    margin: auto auto;
+    width: 800px;
+}
+
+
+/* navigation ikoner + olika behandlingar */
+.navigation_icons{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.single-icon{
+    margin: 0 40px;
+    opacity: 70%;
+}
+.single-icon:hover{
+    opacity: 100%;
+}
+.section-treatment{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+
+}
+.treatment-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 50px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    width: 100%;
+}
+
+
+/* upptäck sektion */
+.discover{
+    grid-column: 1/4;
+    background-color: var(--sand);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 100px 0;
+}
+#produktbild{
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.discover-textarea{
+    max-width: 600px;
+    position: relative;
+    padding-top: 30px;
+}
+h2{
+    font-family: var(--ff-rubrik);
+    color: var(--green);
+    font-size: var(--fs-rubrik);
+    margin-bottom: 20px;
+}
+.produktinfo{
+    font-family: var(--ff-bodytext);
+    color: var(--black);
+    font-size: var(--fs-bodytext);
+    line-height: 29px;
+}
+.button-discover{
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin-top: 40px;
+    color: var(--sand);
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-bodytext);
+}
+
+
+/* skärmar mindre än 780px (tablets) */
+@media screen and (max-width: 1030px){
+    .single-icon{
+        width: 80px;
+        margin: 0 20px;
+    }
+    .box{
+        width: 200px;
+    }
+    .treatment-wrapper{
+        gap: 40px 20px;
+    }
+    h1{
+        font-size: var(--fs-rubrik);
+        width: 450px;
+        top: 200px;
+    }
+    .discover{
+        margin: 50px 0 100px 0;
+    }
+    #produktbild{
+        width: 35%;
+    }
+    .discover-textarea{
+        padding: 0;
+    }
+    h2{
+        font-size: var(--fs-underrubrik);
+    }
+    .button-discover{
+        position: static;
+    }
+}
+
+/* skärmar mindre än 380px (mobil) */
+@media screen and (max-width: 500px){
+    .single-icon{
+        width: 60px;
+        margin: 0 20px;
+    }
+    #head-img{
+        height: 200px;
+        object-fit: cover;
+    }
+    h1{
+        font-size: var(--fs-underrubrik);
+        width: 300px;
+        top: 190px;
+    }
+    .content{
+        row-gap: 35px;
+    }
+    .treatment-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .box{
+        width: 160px;
+    }
+    .discover{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    #produktbild{
+        width: 100%;
+        height: 160px;
+        margin: 0 0 20px 0;
+    }
+    .button-discover{
+        padding-left: 40px;
+    }
+    .produktinfo{
+        font-size: var(--fs-bodytext-mobile);
+        line-height: 25px;
+    }
+}
