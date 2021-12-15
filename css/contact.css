@@ -186,7 +186,7 @@ textarea {
 
 .about img {
     height: 250px;
-    margin: 70px 30px;
+    margin: 70px auto;
 }
 
 .container {
@@ -249,6 +249,10 @@ textarea {
         aside p,
         .about p {
             font-size: 18px;
+        }
+
+        .about img {
+            height: 200px;
         }
     }
     
