@@ -16,6 +16,10 @@ button {
     border-radius: 5px;
 }
 
+.p-home {
+    color: var(--black);
+}
+
 #top-container {
     width: 100%;
     max-width: 1920px;
