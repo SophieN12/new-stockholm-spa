@@ -42,6 +42,11 @@ li, a{
     margin-right: 10px;
 }
 
+.active{
+    padding-bottom: 3px;
+    border-bottom: solid 2px var(--black);
+}
+
 
 /* vanlig navugering försvinner och ersätts med hamburger-menu */
 @media screen and (max-width: 1300px ) {
