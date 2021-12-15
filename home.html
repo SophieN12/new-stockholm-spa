@@ -4,9 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+
     <title>HOME</title>
 </head>
 <body>
+
+    <header>
+        <nav class="nav_wrapper">
+            <ul class="nav_links">
+                <li><a class="navbar" href="treatments.html">BEHANDLINGAR</a></li>
+                <li><a class="navbar" href="products.html">PRODUKTER</a></li>
+                <li><a class="navbar" href="contact.html">KONTAKT</a></li>
+            </ul>
+            <a class="hamburgermenu" href="#"><img src="img/img-header/hamburger.svg" alt="hamburger menu icon"></a>
+        </nav>
+
+        <a href="home.html"><img class="logo" src="img/img-header/logga_spa.svg" alt="Brand logo"></a>
+        
+        <div class="header-icons">
+            <a href=""><img id="search" src="img/img-header/search.svg" alt="search icon"></a>
+            <a href=""><img id="shoppingcart" src="img/img-header/shoppingcart.svg" alt="shoppingcart icon"></a>
+        </div>
+    </header>
+
+    <div id="top-container">
+        <h1>Stockholm Spa</h1>
+
+        <form action="treatments.html">
+        <button>Boka tid</button>
+        </form>
+    </div>
+
+    <div id="flex-container">
+        <div class="box">
+            <h2>Massage</h2>
+            <p class="p-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel vulputate ante. Ut tincidunt metus nec pellentesque sagittis. Vivamus erat sapien, vehicula eu ante at, tincidunt euismod lectus. </p>
+            
+            <form action="treatments.html">
+            <button>Boka tid</button>
+            </form>
+        </div>
+        <div class="box box-img">
+            <img src="img/img-home/photo-1590439471364-192aa70c0b53.jpeg" alt="beauty products">
+        </div>
+        <div class="box">
+            <h2>Hudvård</h2>
+            <p class="p-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel vulputate ante. Ut tincidunt metus nec pellentesque sagittis. Vivamus erat sapien, vehicula eu ante at, tincidunt euismod lectus. </p>
+            
+            <form action="treatments.html">
+            <button>Boka tid</button>
+            </form>
+        </div>
+        <div class="box box-img">
+            <img src="img/img-home/photo-1517487881594-2787fef5ebf7.jpeg" alt="still life">
+        </div>
+        <div class="box-wide">
+            <h2>Rubrik</h2>
+            <p class="p-home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat sapien, vehicula eu ante at, tincidunt euismod lectus. Integer accumsan, ex quis imperdiet luctus, diam eros consequat magna, at malesuada felis arcu eu nulla. Praesent dapibus a ipsum ac sodales. Integer placerat lectus sed ultricies tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer urna urna, imperdiet sed diam non, volutpat faucibus nulla.</p>
+        </div>
+    </div>
+
+    <div id="product-preview">
+        <h2>Produkter</h2>
+
+            <div class="product-flex">
+
+                <div class="product-item">
+                <a href="products.html">
+                <img src="img/img-home/toa-heftiba-GLl6_-L3fxM-unsplash.jpg" alt="product photo - face mask">
+                <p class="p-home">Product name</p>
+                <p class="p-home">sek</p>
+                </a>
+                </div>
+
+                <div class="product-item">
+                <a href="products.html">
+                <img src="img/img-home/mathilde-langevin-p3O5f4u95Lo-unsplash.jpg" alt="product photo - face cream">
+                <p class="p-home">Product name</p>
+                <p class="p-home">sek</p>
+                </a>
+                </div>
+
+                <div class="product-item">
+                <a href="products.html">     
+                <img src="img/img-home/jess-harper-sunday-tBKYocAkzRU-unsplash.jpg" alt="product photo - misc">
+                <p class="p-home">Product name</p>
+                <p class="p-home">sek</p>
+                </a>
+                </div>
+            </div>
+
+            <form action="products.html">
+            <button>Se alla produkter</button>
+            </form>
+    </div>
+
+    <div class="img-container">
+    </div>
     
+    <div class="container">
+        <footer>
+            <section id="opening-hours">
+                <h2>ÖPPETTIDER</h2>
+                <div id="opening-hours-text">
+                    <p id="weekdays-text">Måndag - Fredag</p>
+                    <p>09 - 22</p>
+                    <p id="saturday-text">Lördag</p>
+                    <p>10 - 22</p>
+                    <p id="sunday-text">Söndag</p>
+                    <p>11 - 23</p>
+                </div>
+            </section>
+
+            <section id="find-us-here">
+                <h2>HITTA HIT</h2>
+                <p>Mångatan 167<br>Stockholm</p>
+                <img src="img/location-icon.png" alt="A Location Icon">
+            </section>
+
+            <section id="contact-info">
+                <h2>KONTAKT</h2>
+                <p>Stockholm@spa.com<br>08-8936763</p>
+                <img src="img/insta-icon.png" alt="Instagram's Icon">
+                <img src="img/facebook-icon.png" alt="Facebook's Icon">
+                <img src="img/youtube-icon.png" alt="Youtube's Icon">
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

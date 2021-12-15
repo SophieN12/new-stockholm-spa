@@ -1,0 +1,219 @@
+@import 'general.css';
+
+button {
+    margin: 2rem 0;
+
+    padding: 20px 50px;
+    border: none;
+    color: var(--sand);
+    background-color: var(--green);
+
+    font-family: var(--ff-bodytext);
+    font-size: var(--fs-bodytext);
+    text-transform: uppercase;
+    font-style: italic;
+
+    border-radius: 5px;
+}
+
+.p-home {
+    color: var(--black);
+}
+
+#top-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    background: url('/img/img-home/photo-1523459178261-028135da2714.jpeg');
+    background-size: cover;
+    background-position-y: -80px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--ff-rubrik);
+    font-size: var(--fs-rubrik);
+    color: var(--sand);
+}
+
+#top-container button {
+    margin: 3rem 0;
+
+    font-size: var(--fs-underrubrik);
+}
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#flex-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.box {
+    background-color: var(--sand);
+    flex-basis: calc(33.33%);
+    
+    height: 600px;
+    text-align: center;
+
+    padding: 100px 50px 0px 50px;
+}
+
+.box h2 {
+    margin-bottom: 20px;
+}
+
+.box-img {
+    padding: 0;
+}
+
+.box-wide {
+    background-color: var(--white);
+    padding: 100px;
+
+    width: 55vw;
+    max-width: 1200px;
+}
+
+.box-wide h2 {
+    margin-bottom: 20px;
+}
+
+#product-preview {
+    background-color: var(--sand);
+
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px;
+
+    text-align: center;
+}
+
+#product-preview h2 {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.product-flex {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 50px auto 20px;
+}
+
+.product-item {
+    flex-basis: calc(33.33%); 
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.img-container {   
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    margin: 0 auto;
+
+    background: url('/img/img-home/roberto-nickson-YCW4BEhKluw-unsplash.jpg');
+    background-size: cover;
+    background-position-y: -20vw;
+}
+
+@media screen and (max-width:1200px) {
+    .product-item img {
+        max-width: 20vw;
+    }
+
+    p {
+        font-size: var(--fs-bodytext-mobile);
+    }
+}
+
+@media screen and (max-width:960px) {
+
+    .box {
+        flex-basis: calc(50%);
+    }
+
+    #flex-container :nth-child(3)  {order: 4; }
+    #flex-container :nth-child(4) { order: 3; }
+    #flex-container :nth-child(5) { order: 5; }
+
+    .box-wide {
+        width: 100%;
+    }
+
+    .product-flex {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .product-item img {
+        max-width: 50vw;
+        margin-bottom: 20px;
+    }
+
+    .product-item {
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    #top-container {   
+        height: 500px;
+
+        background-position-y: 0;
+
+        font-size: var(--fs-underrubrik);
+
+        padding-top: 100px;
+    }
+
+    #flex-container :nth-child(3) { order: 3; }
+    #flex-container :nth-child(4)  {order: 4; }
+
+    .box {
+        flex: 0 0 100%;
+        padding: 100px 50px 50px 50px;
+
+        height: auto;
+    }
+
+    .box-img {
+        padding: 0;
+        margin-bottom: -5px;
+    }
+
+    .img-container {   
+        background-position-y: 0;
+    }
+
+    #product-preview {
+        padding: 0 0 50px 0;
+        margin: auto;
+    }
+
+    #product-preview h2 {
+       padding: 100px 100px 0 100px;
+    }
+
+    .product-item {
+        margin: 25px;
+    }
+}
