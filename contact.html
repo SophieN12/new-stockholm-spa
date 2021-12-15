@@ -5,8 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <div class="container-1">
+        <header>
+            <nav class="nav_wrapper">
+                <ul class="nav_links">
+                    <li><a class="navbar" href="treatments.html">BEHANDLINGAR</a></li>
+                    <li><a class="navbar" href="products.html">PRODUKTER</a></li>
+                    <li><a class="navbar" id="kontakt" href="contact.html">KONTAKT</a></li>
+                </ul>
+                <a class="hamburgermenu" href="#"><img src="img/img-header/hamburger.svg" alt="hamburger menu icon"></a>
+            </nav>
     
+            <a href="home.html"><img class="logo" src="img/img-header/logga_spa.svg" alt="Brand logo"></a>
+            
+            <div class="header-icons">
+                <a href=""><img id="search" src="img/img-header/search.svg" alt="search icon"></a>
+                <a href=""><img id="shoppingcart" src="img/img-header/shoppingcart.svg" alt="shoppingcart icon"></a>
+            </div>
+        </header>
+
+        <div class="picture">
+            <img src="img/img-contact/LuxExpose-Beckford-House-Tower-Pool.jpg" alt="Bild på inomhuspool" class="cover">
+        </div>
+
+        <div class="link-about">
+            <h2>Vill du veta mer <a href="#om_oss">om oss</a>?</h2>
+        </div>
+
+        <main>
+            <h2>Kontakta oss</h2>
+            <div class="contact-info">
+                <p>Telefonnummer<br>08-8936763</p>
+                <p>E-post<br>Stockholm_SPA@gmail.com</p>
+                <hr>
+                <h2>Öppettider</h2>
+                <p>Måndag-Fredag<br>09-22</p>
+                <p>Lördag<br>10-22</p>
+                <p>Söndag<br>11-23</p>
+                <hr>
+                <div class="icons">
+                    <div class="icons1-2">
+                        <a href="https://www.facebook.com" target="_blank"><img src="img/img-contact/icons/facebook.png" alt="facebook-logo"></a>
+                        <a href="https://www.instagram.com" target="blank"><img src="img/img-contact/icons/instagram.png" alt="instagram-logo"></a>
+                    </div>
+                    <div class="icons3-4">
+                        <a href="https://www.youtube.com" target="blank"><img src="img/img-contact/icons/youtube.png" alt="youtube-logo"></a>
+                        <a href="https://www.tripadvisor.com" target="blank"><img src="img/img-contact/icons/tripadvisor.png" alt="tripadvisor-logo"></a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <aside>
+            <h2>Vill du att vi kontaktar dig?</h2>           
+            <form action="" method="post" id="form">
+                <p><label for="name">Namn*</label>
+                <input type="text"name="name" id="name"required></p>
+
+                <p><label for="nr">Telefonnummer*</label>
+                <input type="numbers" name="nr" id="nr"></p>
+
+                <p><label for="email">E-post*</label>
+                <input type="email" name="email" id="email"required></p>
+
+                <p><label for="message">Meddelande</label><br>
+                <textarea name="message" id="message" placeholder="Beskriv din förfrågan här"></textarea></p>
+
+                <div class="container-btn">
+                    <p><input type="submit" value="SKICKA"></p>
+                </div>
+            </form>
+        </aside>
+
+        <div class="about">
+            <a id="om_oss">
+                <h2>Om oss</h2>
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis rerum temporibus. Repellendus,
+                 ipsum officiis tempore ea id mollitia dolor voluptatem iusto veritatis ad fuga adipisci aspernatur minus? Quia, qui?
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis rerum temporibus. Repellendus,
+                 ipsum officiis tempore ea id mollitia dolor voluptatem iusto veritatis ad fuga adipisci aspernatur minus? Quia, qui?</p>
+                <div class="flex-img">
+                    <img src="img/img-contact/about.jpg" alt="Bild på inredning">
+                    <img src="img/img-contact/about-reception1.png" alt="Reception">
+                    <img src="img/img-contact/about-2.png" alt="Bild på inredning">
+                </div>
+            </div>
+
+        <div class="container">
+            <footer>
+                <section id="opening-hours">
+                    <h2>ÖPPETTIDER</h2>
+                    <div id="opening-hours-text">
+                        <p id="weekdays-text">Måndag - Fredag</p>
+                        <p>09 - 22</p>
+                        <p id="saturday-text">Lördag</p>
+                        <p>10 - 22</p>
+                        <p id="sunday-text">Söndag</p>
+                        <p>11 - 23</p>
+                    </div>
+                </section>
+                <section id="find-us-here">
+                    <h2>HITTA HIT</h2>
+                    <p>Mångatan 167<br>Stockholm</p>
+                    <img src="img/location-icon.png" alt="A Location Icon">
+                </section>
+    
+                <section id="contact-info">
+                    <h2>KONTAKT</h2>
+                    <p>Stockholm@spa.com<br>08-8936763</p>
+                    <img src="img/insta-icon.png" alt="Instagram's Icon">
+                    <img src="img/facebook-icon.png" alt="Facebook's Icon">
+                    <img src="img/youtube-icon.png" alt="Youtube's Icon">
+                </section>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

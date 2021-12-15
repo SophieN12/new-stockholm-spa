@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-1 {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--sand);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto 378px;
+    grid-template-areas:
+    "header header"
+    "picture picture"
+    "link link"
+    "contact form"
+    "about about"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    z-index: 2;
+}
+
+#kontakt {
+    padding-bottom: 3px;
+    border-bottom: solid 2px var(--black);
+}
+
+.picture {
+    grid-area: picture;
+    text-align: center;
+    z-index: 1;
+}
+
+.cover {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+.link-about {
+    grid-area: link;
+}
+
+.link-about a,
+.link-about h2 {
+    color: var(--black);
+    margin: 70px auto;
+    font-size: var(--fs-underrubrik);
+}
+
+/* Lägger till detta då styling för länkar krockade med header.css */
+.link-about a {
+    font-weight: bold;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 3px;
+}
+
+main {
+    background-color: var(--white);
+    border-right: 2px solid var(--sand);
+    grid-area: contact;
+}
+
+main h2,
+aside h2,
+form p {
+    color: var(--black);
+}
+
+main h2,
+aside h2 {
+    font-size: var(--fs-underrubrik);
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.contact-info p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+hr {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 70px 0;
+}
+
+.icons img {
+    height: 50px;
+    margin: 10px 15px;
+}
+
+.icons1-2,
+.icons3-4 {
+    text-align: center;
+}
+
+aside {
+    background-color: var(--white);
+    border-left: 2px solid var(--sand);
+    grid-area: form;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 30px;
+}
+
+#form {
+    width: 80%;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+input[type="submit"] {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 8px;
+    width: 170px;
+    margin: 0 auto;
+    margin: 70px;
+    font-size: 27px;
+    font-family: var(--ff-rubrik);
+    border: none;
+}
+
+.container-btn {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 147px;
+    margin-top: 5px;
+    padding: 5px;
+    font-family: var(--ff-bodytext);
+    border-radius: 5px;
+}
+
+
+.about {
+    background-color: var(--white);
+    margin-top: 70px;
+    grid-area: about;
+    text-align: center;
+}
+
+.about p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about img {
+    height: 250px;
+    margin: 70px 30px;
+}
+
+.container {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 960px) {
+    .container-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "header"
+        "picture"
+        "link"
+        "contact"
+        "form"
+        "about"
+        "footer"
+        ;
+    }
+
+    .cover {
+        height: 200px;
+    }
+
+    main {
+        margin-bottom: 70px;
+    }
+
+
+
+    .flex-img {
+        flex-direction: column;
+    }
+
+    .about img {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .about {
+        padding-bottom: 70px;
+    }
+
+}
+    @media screen and (max-width: 767px) {
+        .cover {
+            height: 120px;
+        }
+
+        .link-about a,
+        .link-about h2,
+        main h2,
+        aside h2,
+        .about h2 {
+        font-size: 24px;
+        }
+
+        main p,
+        aside p,
+        .about p {
+            font-size: 18px;
+        }
+    }
+    
