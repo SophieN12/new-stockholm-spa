@@ -80,7 +80,7 @@ button{
     margin-top: 30px;
 }
 
-.product-img{
+.collection-img{
     width: 93%;
 }
 
@@ -133,7 +133,7 @@ button{
     flex-wrap: nowrap;
 }
 
-.product-pic{
+.product-img{
     width: 93%;
 }
 
@@ -186,7 +186,7 @@ button{
         padding: 10px 50px;
     }
 
-    .product-img{
+    .collection-img{
         width: 95%;
     }
 
@@ -206,7 +206,7 @@ button{
     .collections-images{
         padding: 10px 20px;
     }
-    .product-img{
+    .collection-img{
         width: 95%;
     }
     
