@@ -205,6 +205,10 @@ button {
         margin-bottom: -5px;
     }
 
+    .box-wide {
+        padding: 100px 50px;
+    }
+
     .img-container {   
         background-position-y: 0;
     }
