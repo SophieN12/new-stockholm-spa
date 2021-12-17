@@ -29,7 +29,6 @@ h4{
     font-weight: bold;
 }
 
-
 button{
     background-color: var(--green);
     color: var(--white);
@@ -37,6 +36,7 @@ button{
     padding: 20px 50px;
     border-style: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 [id*="section"]{
@@ -44,16 +44,17 @@ button{
     margin: 0 auto;
 }
 
-#start-section{
+.logo{
+    z-index: 1
+}
 
+#start-section{
     position: relative;
-    z-index: -1;
 }
 
 #start-section img{
     width: 100%;
 }
-
 
 #shop-now-btn{
     position: absolute;
@@ -67,7 +68,6 @@ button{
     margin: 50px;
 }
 
-
 .collections-images{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,7 +80,7 @@ button{
     margin-top: 30px;
 }
 
-.product-img{
+.collection-img{
     width: 93%;
 }
 
@@ -103,7 +103,10 @@ button{
     margin: 0 5.1%;
     max-width: 60%;
     color: var(--black);
-    line-height: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #call-to-action-section button{
@@ -123,16 +126,14 @@ button{
 }
 
 #product-overview{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 130px;
-    column-gap: 30px;
-    justify-items: center;
-    padding: 10px 100px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px 1%;
+    margin: 0 50px 30px;
+    flex-wrap: nowrap;
 }
 
-.product-pic{
+.product-img{
     width: 93%;
 }
 
@@ -147,21 +148,11 @@ button{
 }
 
 .arrow{
-    position: absolute;
     width: 70px;
+    height: 70px;
+    align-self: center;
+    margin-bottom: 100px;
     cursor: pointer;
-}
-
-#arrow-right{
-    top: 38%;
-    left: 96%;
-    transform: translate(-50%, -50%);
-}
-
-#arrow-left{
-    top: 38%;
-    left: 4%;
-    transform: translate(-50%, -50%);
 }
 
 #slideshow img{
@@ -195,16 +186,8 @@ button{
         padding: 10px 50px;
     }
 
-    .product-img{
+    .collection-img{
         width: 95%;
-    }
-
-    #call-to-action-section p{
-        position: relative;
-        word-wrap: break-word;
-        height: 160px;
-        max-height: 6em;
-        overflow: hidden; 
     }
 
     #read-more{
@@ -215,14 +198,7 @@ button{
 
     .arrow{
         width: 50px;
-    }
-
-    #arrow-left{
-        left: 6%;
-    }
-
-    #arrow-right{
-        left: 94%;
+        height: 50px;
     }
 }
 
@@ -230,12 +206,12 @@ button{
     .collections-images{
         padding: 10px 20px;
     }
-    .product-img{
+    .collection-img{
         width: 95%;
     }
     
     #call-to-action-section p{
-        max-height: 3em;
+        -webkit-line-clamp: 3;
     }
 
     #call-to-action-section button{
@@ -249,13 +225,18 @@ button{
     }
 
     #product-overview{
+        margin: 0 30px 30px;
         column-gap: 0;
-        padding: 10px 70px 10px;
+    }
+
+    #product-overview p{
+        margin-top: 10px;
     }
 
     #slideshow img{
         width: 15px;
     }
+
     .arrow{
         width: 40px;
     }
@@ -341,10 +322,7 @@ button{
         margin: 20px auto 40px;
     }
 
-    #call-to-action-section p{
-        display: none;
-    }
-
+    #call-to-action-section p,
     #read-more{
         display: none;
     }
@@ -354,31 +332,32 @@ button{
     }
 
     #product-overview{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 100px 1fr 100px;
-        align-items: start;
-        row-gap: 10px;
-        
+        position: relative;     
+        flex-wrap: wrap;
+        margin: 0 20px 30px;
     }
 
-     #product-overview div:first-child{
-        grid-row:  2 / 3;
-        align-self: start;
+    .product-section{
+        flex-basis: 45%;
     }
-
-    #product-overview div:nth-child(2){
-        grid-row:  2 / 3;
-    }
-
-     .product-pic:nth-child(3){
-        grid-row: 3 / 4;
-     }
-
-     .product-pic:nth-child(4){
-        grid-row: 3 / 4;
-     }
 
      #product-overview p{
          margin: 0;
      }
+
+     .arrow{
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        width: 35px;
+        height: 35px;
+    }
+
+    #arrow-left{
+        left: 1%;
+    }
+
+    #arrow-right{
+        left: 99%;
+    }
 }
