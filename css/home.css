@@ -103,23 +103,23 @@ button {
     margin-bottom: 20px;
 }
 
-.product-flex {
+.product-grid {
     width: 100%;
     max-width: 1200px;
 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 
     margin: 50px auto 20px;
 }
 
 .product-item {
-    flex-basis: calc(33.33%); 
     text-align: center;
 }
 
 .product-item img {
-    max-width: 300px;
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
@@ -162,8 +162,9 @@ button {
         width: 100%;
     }
 
-    .product-flex {
-        flex: 0 0 100%;
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+
         justify-content: center;
     }
 
