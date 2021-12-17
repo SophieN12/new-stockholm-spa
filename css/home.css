@@ -135,6 +135,10 @@ button {
 }
 
 @media screen and (max-width:1200px) {
+    #top-container {
+        font-size: var(--fs-underrubrik);
+    }
+    
     .product-item img {
         max-width: 20vw;
     }
@@ -144,7 +148,7 @@ button {
     }
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1024px) {
 
     .box {
         flex-basis: calc(50%);
@@ -173,14 +177,14 @@ button {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     
     #top-container {   
         height: 500px;
 
         background-position-y: 0;
 
-        font-size: var(--fs-underrubrik);
+        font-size: var(--fs-bodytext);
 
         padding-top: 100px;
     }
